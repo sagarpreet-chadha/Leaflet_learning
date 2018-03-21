@@ -30,3 +30,6 @@
  3.) Output : 
  
  ![image](https://sagarpreet-chadha.github.io/leaflet-learning.png "Testing")
+ 
+ 
+   * Update => Published on npm : https://www.npmjs.com/package/leaflet-learning .
