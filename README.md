@@ -27,6 +27,6 @@
 
       PLmap.SkyTruth(op) ; 
       
- 3.) 
+ 3.) Output : 
  
  ![image](https://sagarpreet-chadha.github.io/leaflet-learning.png "Testing")
