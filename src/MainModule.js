@@ -1,7 +1,7 @@
 MainModule = function MainModule() {
 
-	var sky = require('./SkyTruthModule.js') ; 
-	this.x = sky ;
+	var sky = require('./SkyTruthModule.js') ; // sky is the function , to execute function => IIFE
+	this.x = sky().i ;
 
 }
 

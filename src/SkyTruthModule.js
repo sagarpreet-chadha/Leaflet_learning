@@ -1,8 +1,8 @@
 module.exports = function SkyTruthModule(op) {
 
-	var i = 10 ; 
+	 this.i = 10 ; 
 	return { 
-		i: i
+		i: this.i
 	} 
 }
 
