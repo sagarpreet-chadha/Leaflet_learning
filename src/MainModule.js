@@ -1,6 +1,8 @@
 MainModule = function MainModule() {
 
-	require('./SkyTruthModule') ; 
+	var sky = require('./SkyTruthModule.js') ; 
+	this.x = sky ;
+
 }
 
 // exports.MainModule = MainModule ;
