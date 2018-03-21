@@ -2,6 +2,9 @@
   "name": "leaflet-learning",
   "version": "1.0.0",
   "description": "",
+  "devDependencies": {
+    "bootstrap": "^3.3.7"
+  },
   "dependencies": {
     "jquery": "^3.2.1",
     "leaflet": "^1.0.3"
