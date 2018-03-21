@@ -14,16 +14,20 @@
 	<div id="map" style="width: 400px ; height: 300px ; "></div>
 	<script type="text/javascript">
 		
-		var map = L.map('map').setView([51.505, -0.09], 13);
-	
+		var map = L.map('map') ;	
 		var PLmap = new MainModule() ;
+
 		var op = {
 			lat: '17' ,
 			lon: '77' , 
-			url: 'https://alerts.skytruth.org/json?&d=30&channel=local&n=10&l=<%= @map_lat+100 %>,<%= @map_lon-100 %>,<%= @map_lat-100 %>,<%= @map_lon+100 %>' , 
 			n: '10' 
 		} ; 
-		console.log(PLmap.x) ;
+
+		var temp = PLmap.SkyTruth(op) ; 
+
+
+
+		console.log(temp.i) ;
 		
 		console.log("hi") ;
 		

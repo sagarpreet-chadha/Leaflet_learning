@@ -1,6 +1,6 @@
 module.exports = function SkyTruthModule(op) {
 
-	 this.i = 10 ; 
+	 this.i = op.lat ; 
 	return { 
 		i: this.i
 	} 
