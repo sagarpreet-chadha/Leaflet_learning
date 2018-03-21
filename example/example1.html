@@ -11,23 +11,24 @@
 <body>
 	<h1>SkyTruth Map</h1>
 
-	<div id="map" style="width: 400px ; height: 300px ; "></div>
+	<div id="map1" style="width: 400px ; height: 300px ; "></div>
 	<script type="text/javascript">
 		
-		var map = L.map('map') ;	
+		//var map1 = L.map('map1') ;	
 		var PLmap = new MainModule() ;
 
 		var op = {
 			lat: '17' ,
 			lon: '77' , 
-			n: '10' 
+			n: '10' ,
+			mapid: 'map1'
 		} ; 
 
 		var temp = PLmap.SkyTruth(op) ; 
 
 
 
-		console.log(temp.i) ;
+	//	console.log(temp.i) ;
 		
 		console.log("hi") ;
 		
