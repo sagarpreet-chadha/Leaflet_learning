@@ -4,15 +4,36 @@
 	<title>SkyTruth Map</title>
 </head>
   <script src="../node_modules/leaflet/dist/leaflet.js"></script>
+  <link href="../node_modules/leaflet/dist/leaflet.css" rel="stylesheet">
   <script src="../node_modules/jquery/dist/jquery.min.js"></script>
   <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="../src/MainModule.js"></script>
 <body>
 	<h1>SkyTruth Map</h1>
 
-	<div id="map"></div>
+	<div id="map" style="width: 400px ; height: 300px ; "></div>
 	<script type="text/javascript">
 		
+		var map = L.map('map').setView([51.505, -0.09], 13);
+	
+		var PLmap = new MainModule() ;
+		var op = {
+			lat: '17' ,
+			lon: '77' , 
+			url: 'https://alerts.skytruth.org/json?&d=30&channel=local&n=10&l=<%= @map_lat+100 %>,<%= @map_lon-100 %>,<%= @map_lat-100 %>,<%= @map_lon+100 %>'
+			n: '10' 
+		} ; 
+		PLmap.SkyTruth(op) ; // URL , image png url , number of markers  
 
+		
+	/*	L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+		}).addTo(map);
+
+		L.marker([51.5, -0.09]).addTo(map)
+    .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
+    .openPopup();
+*/
 
 	</script>
 </body>
