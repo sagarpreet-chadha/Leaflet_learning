@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SkyTruth Map</title>
+</head>
+  <script src="./node_modules/leaflet/dist/leaflet.js"></script>
+  <link href="./node_modules/leaflet/dist/leaflet.css" rel="stylesheet">
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="./dist/bundle.js"></script>
+<body>
+	<h1>SkyTruth Map (Markers Near me are shown) </h1>
+
+	<div id="map1" style="width: 400px ; height: 300px ; "></div>
+	<script type="text/javascript">
+		
+		var PLmap = new MainModule() ;
+
+		var op = {
+			lat: '17' ,
+			lon: '77' , 
+			n: '10' ,
+			mapid: 'map1'
+		} ; 
+
+	    PLmap.SkyTruth(op) ; 
+		
+	</script>
+
+</body>
+</html>
