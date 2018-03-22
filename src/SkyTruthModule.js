@@ -63,5 +63,9 @@ L.marker([parseInt(lat), parseInt(lon)]).addTo(map)
  		});
 	}
 
+	return {
+		map_object: map 
+	}
+
 }
 
