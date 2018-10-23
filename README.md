@@ -1,6 +1,7 @@
 # Leaflet_learning Library
 
 Please refer to this repository : https://github.com/publiclab/leaflet-environmental-layers for more exciting layers !
+The repository in above link was created by me during my Google Summer of Code internship . 
 
 ## Shows Near-By Events using SkyTruth API .
 
