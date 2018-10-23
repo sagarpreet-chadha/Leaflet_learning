@@ -8,6 +8,8 @@ The repository in above link was created by me during my Google Summer of Code i
 ### DEMO : 
 https://sagarpreet-chadha.github.io/Leaflet_learning/
 
+Refer this for demo of Leaflet-Environmental-Layers library demo : https://publiclab.github.io/leaflet-environmental-layers/example/index.html#14/41.8720/-87.6378
+
 ### USE : 
 
 1.)  Use following cdn links in main html file .
